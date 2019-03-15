@@ -9,7 +9,7 @@
 </style>>
 <template>
     <div class="conversation">
-        <h1>{{ contact ? contact.name : 'Select a Contact' }}</h1>
+        <h1>{{ contact ? contact.name : 'Select a Contact' }}    <a href="#" class="fa fa-facebook"></a></h1>
         <MessagesFeed :contact="contact" :messages="messages"/>
         <MessageComposer @send="sendMessage"/>
     </div>

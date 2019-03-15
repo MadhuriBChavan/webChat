@@ -11,7 +11,7 @@
 
 <template>
     <div class="composer">
-        <textarea v-model="message" @keydown.enter="send" placeholder="Message..."></textarea>
+        <textarea v-model="message" @keydown.enter="send" placeholder="Type a Message..."></textarea>
     </div>
 </template>
 
@@ -25,7 +25,7 @@
         methods: {
             send(e) {
                 e.preventDefault();
-                
+
                 if (this.message == '') {
                     return;
                 }
